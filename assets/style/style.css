@@ -1,5 +1,175 @@
 @charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-img {
-    width: 200px;
+
+:root {
+    --red: #D03434;
+    --background: #eec16c;
+    --color--font: #EEA332;
+    --color--lightbrow: #CDAA6F;
+
+    --font--descricao: 'Inconsolata'
 }
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: var(--background);
+    height: fit-content;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+    border-bottom: 3px solid #a07f43;
+}
+
+header img {
+    margin-top: 30px;
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+    background-color: var(--background);
+    height: 70px;
+    width: 100%;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav > h1 {
+    width: 50%;
+    padding-left: 20px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+    width: 40%;
+    height: 100%;
+}
+
+#sobre a {
+    margin-left: 25px;
+    margin-right: 5px;
+
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sobre > a:hover {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+#carrinho{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #D03434;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#carrinho > i {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+
+    height: 30px;
+    font-size: 1.5em;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.field-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+    background-color: red;
+    width: 1600px;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+
+.box {
+    width: 430px;
+    height: 500px;
+
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px black;
+
+    text-align: center;
+    justify-content: center;
+    
+    margin: 10px 10px;
+    padding: 30px;
+
+    font-family: var(--font--descricao);
+    font-weight: 400;
+}
+
+.box > img {
+    height: 220px;
+}
+
+.box > h1 {
+    margin: 20px 0px;
+    font-size: 2.5em;
+    
+}
+
+.box > p {
+    margin-top: 20px ;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.box > h4 {
+    font-size: 3em;
+    color: #db1515;
+}
+
+.box > button {
+    width: 200px;
+    height: 60px;
+    margin: 20px 0px;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #db1515;
+    font-size: 30px;
+}
+
+.box > button:hover {
+    color: white;
+    cursor: pointer;
+}
+ 
